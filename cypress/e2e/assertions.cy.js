@@ -20,7 +20,7 @@ describe('assertions',() =>{
     cy.get('.orangehrm-login-branding').should('be.visible') //logo visible
     .and('exist') //logo exist
      cy.xpath("//a").should('have.length','5') // check no of links
-     cy.get("input[placeholder='Username']").type('Admin') //provide a value in inputbox
-     cy.get("input[placeholder='Username']").should('have.value','Admin')
+     cy.get("input[placeholder='Username']").type('Admin') //provide a value in input
+     cy.get("input[placeholder='Username']").should('have.value','Admin') //provide password
  })
 })
